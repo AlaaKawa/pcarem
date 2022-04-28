@@ -44,7 +44,7 @@ class PatientController extends Controller
              'email' => [ 'email', 'max:255',
 		        Rule::unique('users')->ignore($request->user_id),
 		     ],
-			 'status' => ['required'],
+			
 
             'birthday' => ['required'],
             'gender' => ['required'],
@@ -59,7 +59,7 @@ class PatientController extends Controller
 
 		$patient = Patient::where('user_id', $request->user_id)
 		         			->update([
-								        'status' => $request->status,
+								   
 								        'birthday' => $request->birthday,
 										'phone' => $request->phone,
 										'gender' => $request->gender,
