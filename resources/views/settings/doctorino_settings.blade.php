@@ -74,20 +74,7 @@
                      <input type="text" class="form-control" id="Currency" name="vat" value="{{ App\Setting::get_option('vat') }}">
                   </div>
                </div>
-               <div class="form-group row">
-               <body dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
-                  <label for="Language" class="col-sm-3 col-form-label">{{ __('sentence.Language') }}</label>
-                  <div class="col-sm-9">
-                     <select class="form-control" name="language" id="Language">
-                        <option value="{{ App\Setting::get_option('language') }}">{{ $language[App\Setting::get_option('language')] }}</option>
-   
-                        <option value="en">English</option>
-                        <option value="es">Arabic</option>
-                        <option value="es">Kurdish</option>
-                        
-                     </select>
-                  </div>
-               </div>
+               
                <hr>
                <div class="form-group row">
                   <label for="appointment_interval" class="col-sm-3 col-form-label">{{ __('sentence.Appointment Interval') }}</label>
