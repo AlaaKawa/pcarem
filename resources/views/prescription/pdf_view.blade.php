@@ -34,7 +34,7 @@
                                        {!! clean(App\Setting::get_option('header_left')) !!}
                                     </div>
                                     <div class="col-md-3">
-                                       <p class="float-right">Alger, {{ __('sentence.On') }} {{ $prescription->created_at->format('d-m-Y') }}</p>
+                                       <p class="float-right">Dr, {{ __('sentence.On') }} {{ $prescription->created_at->format('d-m-Y') }}</p>
                                     </div>
                                  </div>
                                  <!-- END ROW : Doctor informations -->
